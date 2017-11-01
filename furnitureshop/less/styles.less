@@ -1,0 +1,384 @@
+
+@import "mymixins.less";
+@import "myvariables.less";
+@import "myfonts.less";
+/* Общие стили*/
+
+a {
+    text-decoration: none;
+    &:hover, &:focus, &:active {
+    text-decoration: none;
+    color: @color;
+    }    
+}  
+ 
+
+.font_bold {
+    font-size: 14px;
+    font-family: @fontbold ;
+    text-transform: uppercase;
+}
+
+.font_light {
+    font-size: 12px;
+    font-family: @fontcustom;
+}
+
+
+/* Шапка страницы*/
+.topheader {
+    font-family: @fontcustom;
+    line-height: 28px;
+    height: 30px;
+    background-color: @colordark;
+}
+
+.topheader_support {
+    height: 30px;
+    font-size: 14px;
+    color: @colorlighter;
+    margin-left: 0px;
+}
+
+/* Навбар*/
+.navbar-default {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-toggle {
+    z-index: 100;
+    border-color: @colordark;
+}
+
+.navbar-default .navbar-toggle .icon-bar   {
+    background-color: @colordark;
+}
+
+.mynavbar {
+    height: 88px;
+    border: none;
+    border-radius: 0; 
+    padding-top: 17px;  
+}
+
+.navbar-brand,.mynavbar_brand {
+    padding-left: 17px;
+    font-size: 50px;
+    line-height: 0.6em;
+    font-family: @fontlight;
+    color: @colordark !important ;
+} 
+
+
+.navbar-default .navbar-collapse {
+    border: none;
+}
+
+.navbar-nav > li > a {
+    color: @colordark !important;
+
+    &:hover,&:active,&:focus {
+        color: @color !important;
+    }
+}
+
+li.active > a {
+    background-color: #fff !important;
+}
+
+
+.mynavbar_basket {
+    width: 40px;
+    height: 40px;
+    border:2px solid @colordark;
+    background-image: url(../img/basket.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    &:hover {
+        border:2px solid @color;
+    }
+}
+
+/* Карусель*/
+.carousel {
+    height: 490px !important;
+    overflow: hidden;
+  }
+
+  .carousel-inner {
+    overflow: visible;
+  }
+  .carousel-inner img {
+    left: 50%;
+    max-width: none !important;
+    min-height: 490px;
+    min-width: 100%;
+    position: absolute;
+    top: 200px;
+    transform: translate(-50%,-50%);
+  }
+
+  .item_colormask {
+    background-color: rgba(0, 169, 161, 0.3);
+    min-height: 490px;
+    min-width: 2000px;
+    position: absolute;
+    top: 0px;
+
+  }
+ 
+  .item_slogan {
+    font-size: 28px;
+    font-family: "RobotoSlabLight";
+    color: #fbfbfb;
+    background-color: rgba(211, 228, 227, 0.4);
+    margin-left: 7vw;
+    position: relative;
+    top: 29vh;
+    }
+
+    /* "Сервис"*/
+   
+    .servis {
+        height: 200px;
+        margin-top: 20px;
+        text-align:center;
+        p {
+        color: @colordark;
+        font-size: 18px;
+        text-transform:uppercase;
+        }
+    }
+  
+    .servis_payment, .servis_delivery, .servis_guarantee  {
+        margin: 30px auto;
+        height: 70px;  
+    }
+
+    /* Категории*/
+
+    .assortment {
+        height: 436px;
+
+        .assortment_sofas,.assortment_accessories,
+        .assortment_benches,.assortment_lightning {
+        height: 218px;
+        padding: 0;
+        border: 1px solid #fff;
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        background-size: cover;
+
+        &:hover,&:active,&:focus {
+
+            .assortment_blockhover {
+                display: block;
+            }
+
+        }
+ 
+        
+        .assortment_blockhover {
+                background-color: rgba(25, 32, 32, 0.9);
+                height: 218px;
+                border: 2px solid @color;
+                padding-top: 50px;
+                font-family: @fontcustom !important;
+                display: none;
+
+
+                h3,span {
+                    color: #fff;
+                }
+                
+
+                span {
+                  border: 2px solid #fff;
+                  padding: 4px;
+
+                  &:hover {
+                    border: 2px solid @colordark;
+                    color: @colordark;  
+                  }
+                  
+                }
+
+        }
+
+        }
+
+    
+        .assortment_sofas {
+            background-image: url(../img/sofa.png);
+        }    
+    
+        .assortment_accessories {
+            background-image: url(../img/accessories.png);
+        }
+        
+        .assortment_benches {
+            background-image: url(../img/benches.png);
+        }
+        
+        .assortment_lightning {
+            background-image: url(../img/lightning.png);
+            background-position: top left;
+        }  
+
+    }
+    .assortment_customfurniture {
+        background-image: url(../img/customfurniture.png);
+        background-repeat: no-repeat;
+        background-position: center left;
+        background-size: cover; 
+        height: 436px;
+        padding: 0;
+
+
+        &:hover,&:active,&:focus {
+            .customfurniture_blockhover {
+                display: block;
+            } 
+        
+        }
+
+        .customfurniture_slogan {
+            position: absolute;
+            bottom: 70px;
+            z-index: 1;
+            padding: 0px 20px;
+            color: #fff;
+            font-size: 35px;
+            font-family: @fontcustom !important;
+
+            span {
+                background-color: rgba(211, 228, 227, 0.4);
+            
+            }
+
+
+        }
+
+        .customfurniture_blockhover {
+            display: none;
+            position: relative;
+            z-index: 2;
+            background-color: rgba(25, 32, 32, 0.9);
+            height: 436px;
+            border: 2px solid @color;
+            padding-top: 150px;
+            font-family: @fontcustom !important;
+
+            h3,span {
+                color: #fff;
+            }
+            
+        
+            span {
+              border: 2px solid #fff;
+              padding: 4px;
+              &:hover {
+                border: 2px solid @colordark;
+                color: @colordark;  
+              }
+            }
+                 
+            }
+         
+        }
+
+    /*"Адрес" */  
+
+    .address {
+
+        h3 {
+            color: @color;
+            margin-top: 30px;
+        }
+
+        h4 {
+            color: @color;
+            margin-top: 20px;
+        }
+
+        .address_support,.address_adress {
+            height: 200px;
+            color: @color;
+            margin-top: 80px;
+
+            a {
+                color: @colordark;
+                &:hover,&:focus,&:active {
+                    color: @color;
+                }
+            }
+            
+        }
+
+        .address_adress {
+            height: 350px;
+            
+        }
+      
+        .address_image {
+            height: 350px;
+            background-image: url(../img/footerimage.png);
+            background-repeat: no-repeat;
+            background-position: center;
+             background-size: cover;
+        }
+    }
+
+    .copyright {
+        height: 100px;
+        padding-top: 30px;
+        background-color: @colordark;
+        color: #fff;
+    }
+
+
+
+    /*Адаптивность */
+
+    @media (max-width: 449px) {
+        .topheader_support {
+         font-size: 12px;
+     } 
+     .navbar-brand,.mynavbar_brand {
+        position: absolute;
+     } 
+     
+     }
+
+     @media (max-width: 767px) {
+        .navbar-default .navbar-collapse {
+            position: relative;
+            z-index: 40;
+            background-color: #fff;
+            width: 250px;
+            height: 350px;
+            top: 40px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 992px) {
+        .navbar-nav > li > a {
+            padding: 10px 10px
+        }
+    
+        .navbar-brand,.mynavbar_brand {
+            font-size: 34px;
+            line-height: 0.7em;
+        }   
+    }
+
+    @media (max-width: 768px) {
+
+        .address_support,.address_adress {
+            height: 200px !important;
+        }
+
+        .address .address_image {
+            height: 200px;
+        }
+    }

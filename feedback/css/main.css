@@ -1,0 +1,28 @@
+
+.panel-success {
+    border-color: #fff;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #2ecc71;
+    border-color: #29b765;
+}
+
+
+#captcha {
+    width: 150px;
+}
+
+
+.jgrowl-error {
+    background-color: #a94442 !important;
+}
+
+.jgrowl-success {
+    background-color: #3c763d !important;
+}
+
+.jgrowl-warning {
+    background-color: #8a6d3b !important;
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <title>24verstka.ru/Furnitureshop</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+       
+        <section class="row"> <!-- Шапка страницы -->
+            <div class="col-xs-12 ">
+                <div class="row topheader">
+                    <div class="col-sm-5 col-xs-12 topheader_support">телефон оператора:&nbsp2&nbsp525&nbsp535</div>
+                </div>
+            </div>
+        </section>
+        <section class="row"><!-- Навбар -->
+            <nav class="navbar navbar-default mynavbar">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                            aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        <a class="navbar-brand mynavbar_brand" href="#">ComodDoor</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active "><a href="#"><span class="font_bold">О Нас</span><br><span class="font_light">Наша компания</span></a></li>
+                            <span class="sr-only">(current)</span>
+                            </a>
+                            </li>
+                            <li><a href="#"><span class="font_bold">Продукция</span><br><span class="font_light">Наши товары</span></a></li>
+                            <li><a href="#"><span class="font_bold">Клиентам</span><br><span class="font_light">Наши услуги</span></a></li>
+                            <li><a href="#"><span class="font_bold">Контакты</span><br><span class="font_light">Свяжитесь с нами</span></a></li>
+                            <li>
+                                <a href="#">
+                                    <div class="mynavbar_basket"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <section class="row slider"><!-- Карусель -->
+            <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+                <!-- Индикаторы для карусели -->
+                <ol class="carousel-indicators">
+                    <!-- Перейти к 0 слайду карусели с помощью соответствующего индекса data-slide-to="0" -->
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <!-- Перейти к 1 слайду карусели с помощью соответствующего индекса data-slide-to="1" -->
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <!-- Перейти к 2 слайду карусели с помощью соответствующего индекса data-slide-to="2" -->
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <!-- Слайды карусели -->
+                <div class="carousel-inner">
+                    <!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
+                    <div class="active item">
+                        <div class="carousel-caption"></div>
+                        <img src="img/slide1.jpg" alt="...">
+                    </div>
+                    <!-- Слайд №2 -->
+                    <div class="item">
+                        <div class="carousel-caption"></div>
+                        <img src="img/slide2.jpg" alt="...">
+                    </div>
+                    <!-- Слайд №3 -->
+                    <div class="item">
+                        <div></div>
+                        <div class="carousel-caption"></div>
+                        <img src="img/slide3.jpg" alt="...">
+                    </div>
+                    <div class="item_colormask"><span class="item_slogan">Радуйся каждому дню,</span><br><span class="item_slogan">в новой обстановке!</span></div>
+                </div>
+                <!-- Навигация для карусели -->
+                <!-- Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
+                <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <!-- Кнопка, осуществляющая переход на следующий слайд с помощью атрибута data-slide="next" -->
+                <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+
+            </div>
+
+        </section>
+        <section class="row"><!--"Сервис" -->
+            <div class="col-sm-12 col-md-4 servis ">
+                <div><img class="servis_delivery" src="./img/delivery.png" alt="...">
+                    <p>Бесплатная доставка !</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 servis ">
+                <div><img class="servis_payment" src="./img/payment.png" alt="...">
+                    <p>Безопасные платежи !</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 servis ">
+                <div><img class="servis_guarantee" src="./img/guarantee.png" alt="...">
+                    <p>Вернем деньги !</p>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid"><!--"Категории" -->
+            <div class="row assortment ">
+                <div class="col-sm-12 col-md-6 ">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 assortment_sofas">
+                            <div class="assortment_blockhover text-center">
+                                    <h3>Диваны</h3>
+                                    <a href="##"><span>Смотреть категорию</span></a>       
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 assortment_accessories">
+                            <div class="assortment_blockhover text-center">
+                                    <h3>Аксессуары</h3>
+                                    <a href="##"><span>Смотреть категорию</span></a>      
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 assortment_benches">
+                            <div class="assortment_blockhover text-center">
+                                    <h3>Кровати</h3>
+                                    <a href="##"><span>Смотреть категорию</span></a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 assortment_lightning">
+                            <div class="assortment_blockhover text-center">
+                                    <h3>Светильники</h3>
+                                    <a href="##"><span>Смотреть категорию</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 assortment_customfurniture ">
+                    <d12 col-sm-6v class="customfurniture_slogan"><span>Индивидуальный дизайн!</span></d12>
+                    <div class="customfurniture_blockhover text-center">
+                        <h3>Мебель на заказ</h3>
+                        <a href="##"><span>Смотреть категорию</span></a>
+                    </div>    
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid">
+            <div class="row address">
+                <div class="col-xs-12 col-sm-4 text-center address_support">
+                    <h3>Помощь</h3>
+                    <h4><a href="##">FAQs</a></h4><a></a>
+                    <h4><a href="##">Контакты</a></h4>
+                    <h4><a href="##">Рекомендации</a></h4>
+                    <h4><a href="##">Способы оплаты</a></h4>
+                </div>
+                <address class="col-xs-12 col-sm-4 text-center address_adress">
+                    <h3>Адрес</h3>
+                    <h4>Красноярский Край,</h4>
+                    <h4>Красноярск</h4>
+                    <h4>+7 456 56 15</h4>
+                    <h4>nikitin.pavel.nik@yandex.ru</h4>   
+                </address>
+                <div class="col-xs-12 col-sm-4 text-center address_image"></div>
+            </div>  
+        </section>
+        <section class="row copyright text-center">
+            <h4>Copyright © 2017 Nikitin Pavel</h4>
+        </section>
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/freelancer.min.js"></script>
+
+</body>
+
+</html>
