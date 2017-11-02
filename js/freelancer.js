@@ -42,12 +42,4 @@
     });
 
 
-     $( document ).ready(function() {
-
-     $('body,html').animate({scrollTop:0},800);
-     $( ".aboutme" ).addClass( "aboutme_open" );
-   
-});
-
-
 })(jQuery); // End of use strict

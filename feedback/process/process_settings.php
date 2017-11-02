@@ -3,7 +3,7 @@
 // стартовый путь ('http://24verstka.ru/')
 $startPath = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . $_SERVER['HTTP_HOST'] . '/';
 // максимальный размер файла 512Кбайт (512*1024=524288)
-const MAX_FILE_SIZE = 524288;
+const MAX_FILE_SIZE = 1024000;
 // директория для хранения загруженных файлов
 $uploadPath = dirname(dirname(__FILE__)) . '/uploads/';
 // разрешённые расширения файлов
