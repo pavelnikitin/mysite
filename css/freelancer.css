@@ -508,6 +508,7 @@ div#maincontent {
 }
 .medescription {
   padding: 20px;
+  text-align: left;
 }
 body {
   background-image: url(../img/Untitled-1.png);
