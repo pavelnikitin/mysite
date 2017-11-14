@@ -502,13 +502,27 @@ div#maincontent {
 }
 .preview {
   margin: 30px auto !important;
+  width: 70vw;
 }
 .navbar-custom .navbar-nav li.active a {
   border-radius: 0.5em;
 }
+.btn-primary:focus,
+.btn-success:focus {
+  background-color: #252323 !important;
+}
 .medescription {
   padding: 20px;
   text-align: left;
+}
+.portfolio-item {
+  border: 1px dashed rgba(7, 8, 8, 0.52);
+  border-left: none;
+  border-right: none;
+  padding: 20px;
+}
+.portfolio-description {
+  text-align: center;
 }
 body {
   background-image: url(../img/Untitled-1.png);
