@@ -1,3 +1,14 @@
+@import "variables";
+
+h4 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.banner {
+    margin-bottom: 40px;
+}
+
 .wrapper {
     background-color: rgb(255, 255, 255);
     margin-top: 45vh;
@@ -16,14 +27,23 @@
 }
 
 .btn-primary, .btn-success {
+    background-color: @gray-base !important;
    &:focus {
-    background-color: rgb(37, 35, 35) !important;
+    background-color: @gray-darker !important;
    } 
 }
+
 
 .medescription {
     padding: 20px;
     text-align: left;
+    a {
+        text-decoration: none;
+        color: @gray-base;
+        &:hover {
+            color: @gray-darker;
+        }
+    }
 }
 
 .portfolio-item {
@@ -34,7 +54,9 @@
 }
 
 .portfolio-description {
-    text-align: center;
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 
