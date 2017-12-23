@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
     <link rel="stylesheet" href="css/styles.min.css">
+    
     <title>24verstka.ru/Мебельная компания</title>
 </head>
 
@@ -98,17 +100,17 @@
         </section>
         <section class="row"><!--"Сервис" -->
             <div class="col-sm-12 col-md-4 servis ">
-                <div><img class="servis_delivery" src="./img/delivery.png" alt="...">
+                <div ><img data-wow-delay="0.5s" class="wow fadeInLeft servis_delivery"  src="./img/delivery.png" alt="...">
                     <p>Бесплатная доставка !</p>
                 </div>
             </div>
             <div class="col-sm-12 col-md-4 servis ">
-                <div><img class="servis_payment" src="./img/payment.png" alt="...">
+                <div><img data-wow-delay="0.5s" class="wow fadeInUp servis_payment" src="./img/payment.png" alt="...">
                     <p>Безопасные платежи !</p>
                 </div>
             </div>
             <div class="col-sm-12 col-md-4 servis ">
-                <div><img class="servis_guarantee" src="./img/guarantee.png" alt="...">
+                <div><img data-wow-delay="0.5s" class=" wow fadeInRight servis_guarantee" src="./img/guarantee.png" alt="...">
                     <p>Вернем деньги !</p>
                 </div>
             </div>
@@ -187,6 +189,10 @@
 
     <!-- Theme JavaScript -->
     <script src="js/freelancer.min.js"></script>
+    <script src="node_modules/wowjs/dist/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
 
 </body>
 
