@@ -7,44 +7,37 @@ $name = str_replace(array('\r','\n'),array(' ',' '),$name);
 $email = filter_var(trim($_POST['form_email']), FILTER_SANITIZE_EMAIL);
 $message = trim($_POST['form_msg']);
 
-// Check that data was sent to the mailer.
+
 if ( empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-// Set a 400 (bad request) response code and exit.
+// Установить 400 (неудачный запрос) и выйти.
 http_response_code(400);
-echo 'Oops! There was a problem with your submission. Please complete the form and try again.';
+echo 'Пожалуйста, заполните форму';
 exit;
 }
+// включить файл PHPMailerAutoload.php
+require_once dirname(__FILE__) . '/phpmailer/PHPMailerAutoload.php';
+   
+//формируем тело письма
+$output = 'Дата: ' . date("d-m-Y H:i") ."\n";
+$output .= 'Имя пользователя: ' . $name ."\n";
+$output .= 'Email: ' . $email . "\n";
+$output .= 'Сообщение: ' . $message ."\n" ;
 
-// Set the recipient email address.
-// FIXME: Update this to your desired email address.
-$recipient = 'nikitin.pavel.nik@yandex.ru';
+// создаём экземпляр класса PHPMailer
+$mail = new PHPMailer;
 
-// Set the email subject.
-$subject = 'Новое сообщение от '. $name .' с моего сайта';
+$mail->From      = 'no-reply@24verstka.ru';
+$mail->FromName  = '24verstka.ru';
+$mail->Subject   = 'Сообщение с сайта 24verstka.ru';
+$mail->Body      = $output;
+$mail->AddAddress( 'nikitin.pavel.nik@yandex.ru' );
 
-// Build the email content.
-$email_content = 'Дата: ' . date("d-m-Y H:i") ."\n";
-$email_content .= 'Имя пользователя: ' . $name ."\n";
-$email_content .= 'Email: ' . $email . "\n";
-$email_content .= 'Сообщение: ' . $message ."\n" ;
-
-// Build the email headers.
-$email_headers = 'From: ' .$name. ',  Email: ' .$email.'.';
-
-// Send the email.
-if (mail($recipient, $subject, $email_content, $email_headers)) {
-// Set a 200 (okay) response code.
-http_response_code(200);
-echo 'Thank You! Your message has been sent.';
-} else {
-// Set a 500 (internal server error) response code.
-http_response_code(500);
-echo 'Oops! Something went wrong and we couldn’t send your message.';
+// отправляем письмо
+if ($mail->Send()) {
+    $data['result']='success';
+  } else {
+    $data['result']='error';
+  }
 }
 
-} else {
-// Not a POST request, set a 403 (forbidden) response code.
-http_response_code(403);
-echo 'There was a problem with your submission, please try again.';
-}
 ?>
