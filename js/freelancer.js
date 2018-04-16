@@ -3,6 +3,14 @@
 (function($) {
     "use strict"; // Start of use strict
 
+    //flexslider
+    $(window).load(function() {
+        $('.flexslider').flexslider({
+          animation: "slide"
+        
+        });
+      });
+
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('.page-scroll a').bind('click', function(event) {
         var $anchor = $(this);

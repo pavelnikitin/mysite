@@ -10,7 +10,7 @@ h4 {
   margin-top: 45vh;
 }
 .preview {
-  margin: 30px auto !important;
+  margin: 60px auto !important;
   width: 70vw;
 }
 .navbar-custom .navbar-nav li.active a {
@@ -18,11 +18,11 @@ h4 {
 }
 .btn-primary,
 .btn-success {
-  background-color: #837ddb !important;
+  background-color: #7e7d8a !important;
 }
 .btn-primary:focus,
 .btn-success:focus {
-  background-color: #443bc9 !important;
+  background-color: #55555e !important;
 }
 .medescription {
   padding: 20px;
@@ -30,10 +30,10 @@ h4 {
 }
 .medescription a {
   text-decoration: none;
-  color: #837ddb;
+  color: #7e7d8a;
 }
 .medescription a:hover {
-  color: #443bc9;
+  color: #55555e;
 }
 .portfolio-item {
   border: 1px dashed rgba(7, 8, 8, 0.52);
@@ -43,8 +43,10 @@ h4 {
 }
 .portfolio-description {
   text-align: left;
-  padding-left: 50px;
-  padding-right: 50px;
+  margin-top: 10px;
+}
+.portfolio-slider {
+  margin-top: 40px;
 }
 body {
   background-image: url(../img/Untitled-1.png);
@@ -67,6 +69,15 @@ p {
 p.small {
   font-size: 16px;
   color: #505867;
+}
+@media (max-width: 1024px) {
+  p {
+    font-size: 16px;
+  }
+  p.small {
+    font-size: 12px;
+    color: #505867;
+  }
 }
 a,
 a:hover,
@@ -233,7 +244,10 @@ section h2 {
   }
 }
 #portfolio .portfolio-item {
-  margin: 0 0 15px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  padding-bottom: 50px;
+  padding-top: 50px;
   right: 0;
 }
 #portfolio .portfolio-item .portfolio-link {
@@ -274,11 +288,6 @@ section h2 {
 }
 #portfolio * {
   z-index: 2;
-}
-@media (min-width: 767px) {
-  #portfolio .portfolio-item {
-    margin: 0 0 30px;
-  }
 }
 .floating-label-form-group {
   position: relative;

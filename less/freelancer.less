@@ -21,6 +21,20 @@ p.small {
 	
 }
 
+@media (max-width: 1024px) {
+	p {
+		font-size: 16px;
+	}
+
+	p.small {
+		font-size: 12px;
+		color:#505867;
+		
+	}
+}
+
+
+
 a,
 a:hover,
 a:focus,
@@ -210,12 +224,15 @@ section {
 
 #portfolio {
     .portfolio-item {
-        margin: 0 0 15px;
-        right: 0;
+		margin-top: 40px;
+		margin-bottom: 30px;
+		padding-bottom: 50px;
+		padding-top: 50px;
+		right: 0;
         .portfolio-link {
             display: block;
             position: relative;
-            max-width: 400px;
+			max-width: 400px;
             margin: 0 auto;
             .caption {
                 background: fade(@theme-success, 90%);
@@ -254,13 +271,7 @@ section {
     }
 }
 
-@media(min-width:767px) {
-    #portfolio {
-        .portfolio-item {
-            margin: 0 0 30px;
-        }
-    }
-}
+
 
 .floating-label-form-group {
 	position: relative;
