@@ -68,17 +68,7 @@ if (isset($_POST['message'])) {
     $data['result'] = 'error';
 }
 
-//валидация капчи
-if (isset($_POST['captcha']) && isset($_SESSION['code'])) {
-    $captcha = filter_var($_POST['captcha'], FILTER_SANITIZE_STRING); // защита от XSS
-    if ($_SESSION["code"] != $captcha) { // проверка капчи
-        $data['captcha'] = 'Вы неправильно ввели код с картинки';
-        $data['result'] = 'error';
-    }
-} else {
-    $data['captcha'] = 'Произошла ошибка при проверке проверочного кода';
-    $data['result'] = 'error';
-}
+
 
 // валидация файлов
 if (isset($_FILES['attachment'])) {

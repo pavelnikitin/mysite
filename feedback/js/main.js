@@ -12,7 +12,7 @@ $(function () {
         // наличие у формы блока загрузки файлов
         this.existenceUploadsFile = parameters['existenceUploadsFile'] || false;
         // наличие у формы капчи
-        this.existenceCaptcha = parameters['existenceCaptcha'] || false;
+        this.existenceCaptcha = parameters['existenceCaptcha'] || true;
         // количество элементов input для загрузки файлов
         this.countFiles = parameters['countFiles'] || 5;
         // максимальный размер файла для загрузки (по умолчанию 512 Кбайт)
@@ -28,10 +28,7 @@ $(function () {
             var submitForm = document.getElementById(this.idForm);
             // отправка формы
             $(submitForm).submit($.proxy(this.submitForm, this));
-            if (this.existenceCaptcha) {
-                // обновление капчи
-                $(submitForm).find('.refresh-captcha').click($.proxy(this.refreshCaptcha, this));
-            }
+           
 
             if (this.existenceUploadsFile) { // добавление новых элементов input с type="file" и изменение существующих
                 $('#' + this.idForm + ' .countFiles').text(this.countFiles);
@@ -223,9 +220,7 @@ $(function () {
                             _this.countFiles + '</span>):</p><input type="file" name="attachment[]">' +
                             '<p style="margin-top: 3px; margin-bottom: 3px; color: #ff0000;"></p>');
                     }
-                    if (_this.existenceCaptcha) {
-                        _this.refreshCaptcha();
-                    }
+                   
                     if (_this.hideForm) {
                         submitForm.hide();
                         submitForm.parent().find('.success-message').removeClass('hidden');
@@ -284,11 +279,7 @@ $(function () {
         });
     };
 
-    // обновление капчи
-    ProcessForm.prototype.refreshCaptcha = function () {
-        var imgCaptcha = $('#' + this.idForm).find('.img-captcha');
-        imgCaptcha.attr('src', imgCaptcha.attr('data-src') + '?id=' + Math.random() + '');
-    };
+   
 
     // изменение элемента input с type="file"
     ProcessForm.prototype.changeInputFile = function (e) {

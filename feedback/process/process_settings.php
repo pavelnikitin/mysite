@@ -12,7 +12,7 @@ $allowedExtensions = array('gif', 'jpg', 'png');
 // от какого email будет отправляться письмо
 const MAIL_FROM = 'no-reply@24verstka.ru';
 // от какого имени будет отправляться письмо
-const MAIL_FROM_NAME = 'Имя_сайта';
+const MAIL_FROM_NAME = '24verstka.ru';
 // тема письма
 const MAIL_SUBJECT = 'Сообщение с формы обратной связи';
 // кому необходимо отправить письмо
