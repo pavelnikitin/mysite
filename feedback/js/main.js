@@ -10,9 +10,9 @@ $(function () {
         // скрыть форму после отправки
         this.hideForm = parameters['hideForm'] || true;
         // наличие у формы блока загрузки файлов
-        this.existenceUploadsFile = parameters['existenceUploadsFile'] || true;
+        this.existenceUploadsFile = parameters['existenceUploadsFile'] || false;
         // наличие у формы капчи
-        this.existenceCaptcha = parameters['existenceCaptcha'] || true;
+        this.existenceCaptcha = parameters['existenceCaptcha'] || false;
         // количество элементов input для загрузки файлов
         this.countFiles = parameters['countFiles'] || 5;
         // максимальный размер файла для загрузки (по умолчанию 512 Кбайт)
@@ -339,7 +339,7 @@ $(function () {
      agreeCheckbox - флажок о принятии пользовательского соглашения перед отправкой формы (по умолчанию true)
 
      */
-    var formFeedback = new ProcessForm({idForm: 'feedbackForm', maxSizeFile: 524288});
+    var formFeedback = new ProcessForm({idForm: 'feedbackForm', existenceCaptcha: false, existenceUploadsFile: false, agreeCheckbox: false});
     formFeedback.init();
 
     //var contactForm = new ProcessForm({ idForm: 'contactForm', existenceUploadsFile: false, existenceCaptcha: false });
