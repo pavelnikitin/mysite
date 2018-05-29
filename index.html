@@ -5,11 +5,11 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118926120-1"></script>
     <script>
-         window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments);}
-         gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-         gtag('config', 'UA-118926120-1');
+        gtag('config', 'UA-118926120-1');
     </script>
 
 
@@ -40,10 +40,9 @@
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -52,278 +51,284 @@
 </head>
 
 <body id="page-top" class="index">
-    <div class="container wrapper">
-        <div class="row">
-            <!-- Navigation -->
-            <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
-                <div class="container">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header page-scroll">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                            <span class="sr-only">Toggle navigation</span>меню
-                            <i class="fa fa-bars"></i>
-                        </button>
-                        <a class="navbar-brand" href="#">24verstka.ru</a>
-                    </div>
+    <section class="hero">
+        <div class="hero__overlay">
+            <h1>HTML верстальщик,
+                <br> вебразработчик Никитин Павел
+                <br>(г. Красноярск).</h1>
+        </div>
+        <video loop muted autoplay poster="./img/Workaholic.jpg" class="hero__video">
+            <source src="./video/Workaholicconvert.mp4" type="video/mp4">
+            <source src="./video/Workaholic.webm" type="video/webm">
+        </video>
+        <!-- Navigation -->
+        <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img src="./img/logo2.png" alt="Site Logo">
+                    </a>
+                </div>
 
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="hidden">
-                                <a href="#"></a>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="hidden">
+                            <a href="#"></a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#portfolio">Портфолио</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#contacts">Контакты</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#contact">Отправить E-mail</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+
+    </section>
+
+    <!-- Section about me -->
+
+    <section class="aboutme">
+        <h2 class="sectiontitle">Обо мне</h2>
+        <hr class="underline">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+                    <p>
+                        Моя специализация это создание сайтов и Landing Page. Верстка (фиксированная, резиновая, адаптивная), верстка с использованием
+                        фреймворка
+                        <a href="http://getbootstrap.com/">Bootstrap.
+                    </p>
+                    <p>
+                        </a>Верстка с "натяжкой" на CMS (разработка темы)
+                        <a href="https://wordpress.org/">WordPress.</a>
+                    </p>
+                    <p>
+                        В процессе разработки пишу легкочитаемый, прокомментированный в нужных местах код, который будет понятен другому разработчику.
+                    </p>
+                    <p> В работе использую
+                        <a href="http://webpack.github.io/">Webpack, </a>препроцессоры
+                        <a href="https://sass-scss.ru/">Sass</a> и
+                        <a href="http://lesscss.org">Less, </a>javascript библиотеки
+                        <a href="https://jquery.com/">Jquery</a> и
+                        <a href="https://reactjs.org/">React.</a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Portfolio -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="sectiontitle">Портфолио</h2>
+        <hr class="underline">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1">
+                    <h4 class="portfolio__title">Wordpress сайт.</h4>
+                    <p>
+                        Сайт разработан с использованием
+                        <a href="https://getbootstrap.com/">Bootstrap 4</a> и
+                        <a href="https://wordpress.org/">WordPress.</a>
+                    </p>
+                    <p>Основная часть контента, заголовки, изображения, контактные данные и другая информация легко редактируются
+                        через административное меню Wordpress. Также через административное меню добавляются необходимые
+                        страницы. </p> На сайте реализованы, google карта, parallax эффект фона, mega menu, контактная форма
+                    и многое другое.
+
+                </div>
+                <div class="col-sm-8 col-sm-offset-2">
+                    <div class="flexslider">
+                        <ul class="slides">
+                            <li>
+                                <img src="./img/portfolio/slide1.jpg" />
                             </li>
-                            <li class="page-scroll">
-                                <a href="#portfolio">Портфолио</a>
+                            <li>
+                                <img src="./img/portfolio/slide2.jpg" />
                             </li>
-                            <li class="page-scroll">
-                                <a href="#about">Контакты</a>
+                            <li>
+                                <img src="./img/portfolio/slide3.jpg" />
                             </li>
-                            <li class="page-scroll">
-                                <a href="#contact">Отправить E-mail</a>
+                            <li>
+                                <img src="./img/portfolio/slide4.jpg" />
+                            </li>
+                            <li>
+                                <img src="./img/portfolio/slide5.jpg" />
+                            </li>
+                            <li>
+                                <img src="./img/portfolio/slide6.jpg" />
+                            </li>
+                            <li>
+                                <img src="./img/portfolio/slide7.jpg" />
+                            </li>
+                            <li>
+                                <img src="./img/portfolio/slide8.jpg" />
+                            </li>
+                            <li>
+                                <img src="./img/portfolio/slide9.jpg" />
+                            </li>
+                            <li>
+                                <img src="./img/portfolio/slide10.jpg" />
                             </li>
                         </ul>
                     </div>
-                    <!-- /.navbar-collapse -->
+
+                    <a href="http://nikitix9.beget.tech/" target="_blank" class="btn btn-primary btn-lg">Демо</a>
+
                 </div>
-                <!-- /.container-fluid -->
-            </nav>
-
-            <!-- Header -->
-            <header class="container">
-                <div class="row">
-                    <h3>обо мне</h3>
-                    <hr class="star-primary">
-                    <div class="col-xs-12">
-                        <img class="banner img-responsive" src="./img/banner.jpg" alt="foto">
-                    </div>
-                    <div class="medescription col-xs-10 col-xs-offset-1">
-                        <h4 class="medescription_title text-center">html верстальщик, вебразработчик Никитин Павел (г. Красноярск)</h4>
-                        <p>
-                            Моя специализация это создание сайтов и Landing Page.Верстка (фиксированная, резиновая, адаптивная), верстка с использованием
-                            фреймворка
-                            <a href="http://getbootstrap.com/">Bootstrap.
-                        </p>
-                        <p>
-                            </a>Верстка с "натяжкой" на CMS (разработка темы)
-                            <a href="https://wordpress.org/">WordPress.</a>
-                        </p>
-                        <p>
-                            В процессе разработки пишу легкочитаемый, прокомментированный в нужных местах код, который будет понятен другому разработчику.
-                            В работе использую
-                            <a href="http://webpack.github.io/">Webpack, </a>препроцессоры
-                            <a href="https://sass-scss.ru/">Sass</a> и
-                            <a href="http://lesscss.org">Less, </a>javascript библиотеки
-                            <a href="https://jquery.com/">Jquery</a> и
-                            <a href="https://reactjs.org/">React.</a>
-                        </p>
-                    </div>
+                <div class="col-sm-10 col-sm-offset-1">
+                    <h4 class="portfolio__title">Лендинг компании по продвижению сайтов.</h4>
+                    <p>
+                        Разработан на React генераторе статичных сайтов
+                        <a href="https://www.gatsbyjs.org/">Gatsby</a> и Bootstrap.</p>
+                    <p> На сайте используются анимация
+                        <a href="http://michalsnik.github.io/aos/">AOS</a>, формы обратной связи в модальном окне с валидацией и оповещениями, калькулятор, а также
+                        адаптивное меню для навигации по секциям страницы.</p>
                 </div>
-            </header>
-
-            <!-- Portfolio Grid Section -->
-            <section class="container" id="portfolio">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h3>Портфолио</h3>
-                        <hr class="star-primary">
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-10 col-xs-offset-1 portfolio-item text-center ">
-                            <h4>Wordpress сайт.</h4>
-                            <p class="portfolio-description">
-                                Сайт разработан с использованием
-                                <a href="https://getbootstrap.com/">Bootstrap 4</a> и
-                                <a href="https://wordpress.org/">WordPress.</a>
-                                Основная часть контента, заголовки, изображения, контактные данные и другая информация легко редактируются через административное
-                                меню Wordpress. Также через административное меню добавляются необходимые страницы. На сайте
-                                реализованы, google карта, parallax эффект фона, mega menu, плагин contact form 7 и многое
-                                другое.
-                            </p>
-                            <div class="col-sm-10 col-sm-offset-1 portfolio-slider">
-                                <div class="flexslider">
-                                    <ul class="slides">
-                                        <li>
-                                            <img src="./img/portfolio/slide1.jpg" />
-                                        </li>
-                                        <li>
-                                            <img src="./img/portfolio/slide2.jpg" />
-                                        </li>
-                                        <li>
-                                            <img src="./img/portfolio/slide3.jpg" />
-                                        </li>
-                                        <li>
-                                            <img src="./img/portfolio/slide4.jpg" />
-                                        </li>
-                                        <li>
-                                            <img src="./img/portfolio/slide5.jpg" />
-                                        </li>
-                                        <li>
-                                            <img src="./img/portfolio/slide6.jpg" />
-                                        </li>
-                                        <li>
-                                            <img src="./img/portfolio/slide7.jpg" />
-                                        </li>
-                                        <li>
-                                            <img src="./img/portfolio/slide8.jpg" />
-                                        </li>
-                                        <li>
-                                            <img src="./img/portfolio/slide9.jpg" />
-                                        </li>
-                                        <li>
-                                            <img src="./img/portfolio/slide10.jpg" />
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <a href="http://nikitix9.beget.tech/" target="_blank" class="btn btn-primary btn-lg">Демо</a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-10 col-xs-offset-1 portfolio-item text-center ">
-                            <h4>Лендинг компании по продвижению сайтов.</h4>
-                            <p class="portfolio-description">
-                                <br>Разработан на React генераторе статичных сайтов <a href="https://www.gatsbyjs.org/">Gatsby</a> и Bootstrap. На сайте используются анимация
-                                <a href="http://michalsnik.github.io/aos/">AOS</a>, формы обратной связи в модальном окне с валидацией и оповещениями, калькулятор,
-                                а также адаптивное меню для навигации по секциям страницы.
-                            </p>
-                            <div class="portfolio-link preview">
-                                <img src="./img/portfolio/seolanding.jpg" class="img-responsive" alt="furnitureshop">
-                            </div>
-                            <a href="seolanding/" target="_blank" class="btn btn-primary btn-lg">Демо</a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-10 col-xs-offset-1 portfolio-item text-center ">
-                            <h4>Фотогалерея.</h4>
-                            <p class="portfolio-description">
-                                <br>Адаптивная фотогалерея разработанная с использованием React и Bootstrap. Реализованы навигация
-                                по фотографиям, сортировка по категориям и "burger-menu".
-                            </p>
-                            <div class="portfolio-link preview">
-                                <img src="./img/portfolio/fotogallery.jpg" class="img-responsive" alt="furnitureshop">
-                            </div>
-                            <a href="fotogallery/" target="_blank" class="btn btn-primary btn-lg">Демо</a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-10 col-xs-offset-1 portfolio-item text-center ">
-                            <h4>Главная страница мебельной компании.</h4>
-                            <p class="portfolio-description">
-                                <br>Адаптивная верстка с использованием Bootstrap. Есть слайдер и "drop-down" меню для мобильных
-                                устройств. </p>
-                            <div class="portfolio-link preview">
-                                <img src="./img/portfolio/furnitureshop.jpg" class="img-responsive" alt="furnitureshop">
-                            </div>
-                            <a href="furnitureshop/index.html" target="_blank" class="btn btn-primary btn-lg">Демо</a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-10 col-xs-offset-1 portfolio-item text-center ">
-                            <h4>Галерея игр.</h4>
-                            <p class="portfolio-description">
-                                <br>Адаптивная вебстраница разработанная с использованием React и Bootstrap. Работает поиск
-                                игры по названию и есть возможность добавления своей игры.</p>
-                            <div class="portfolio-link preview">
-                                <img src="./img/portfolio/gamegallery.jpg" class="img-responsive" alt="furnitureshop">
-                            </div>
-                            <a href="gamegallery/index.html" target="_blank" class="btn btn-primary btn-lg">Демо</a>
-                        </div>
-                    </div>
+                <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3">
+                    <img src="./img/portfolio/seolanding.jpg" class="portfolio__preview img-responsive" alt="preview">
+                    <a href="seolanding/" target="_blank" class="btn btn-primary btn-lg">Демо</a>
                 </div>
-            </section>
+                <div class="col-sm-10 col-sm-offset-1">
+                    <h4 class="portfolio__title">Фотогалерея.</h4>
+                    <p>
+                        Адаптивная фотогалерея разработанная с использованием React и Bootstrap.
+                    Реализованы навигация по фотографиям, сортировка по категориям и "burger-menu".</p>
 
-            <!-- About Section -->
-            <section class=" container success" id="about">
-                <div class="row">
-                    <div class="col-xs-10 col-xs-offset-1 text-center">
-                        <h3>контакты</h3>
-                        <hr class="star-primary">
-                    </div>
-                    <div class="col-xs-10 col-xs-offset-1">
-                        <h4 class="text-center">
-                            <pre>телефон: 8(983) 167-86-48</pre>
-                        </h4>
-                        <h4 class="text-center">
-                            <pre>e-mail:<span style="text-transform: lowercase;"> nikitin.pavel.nik@yandex.ru </span></pre>
-                        </h4>
-
-                    </div>
                 </div>
-            </section>
-
-            <!-- Contact Section -->
-
-            <section class="row" id="contact">
-                <div class="col-xs-12">
-                    <div class="col-lg-12 text-center">
-                        <h3>Отправить E-mail</h3>
-                        <hr class="star-primary">
-                    </div>
-                    <div class="panel panel-success">
-                        <div class="panel-body">
-
-                            <!-- feedback form -->
-                            <form id="feedbackForm" action="feedback/process/process.php" enctype="multipart/form-data" novalidate>
-                                <div class="row">
-                                    <div class="col-sm-6 col-sm-offset-3">
-
-                                        <!-- user name -->
-                                        <div class="form-group has-feedback">
-                                            <label for="name" class="control-label">Имя</label>
-                                            <input id="name" type="text" name="name" class="form-control" value="" placeholder="Ваше имя" minlength="2" required="required">
-                                            <span class="glyphicon form-control-feedback"></span>
-                                        </div>
-
-                                    </div>
-                                    <div class="col-sm-6 col-sm-offset-3">
-
-                                        <!-- user Email -->
-                                        <div class="form-group has-feedback">
-                                            <label for="email" class="control-label">E-mail</label>
-                                            <input id="email" type="email" name="email" required="required" class="form-control" value="" placeholder="Ваш E-mail">
-                                            <span class="glyphicon form-control-feedback"></span>
-                                        </div>
-
-                                    </div>
-                                    <div class="col-sm-6 col-sm-offset-3">
-
-                                        <!-- user message -->
-                                        <div class="form-group has-feedback">
-                                            <label for="message" class="control-label">Сообщение</label>
-                                            <textarea id="message" name="message" class="form-control" rows="3" placeholder="Ваше сообщение" minlength="10"
-                                                maxlength="500" required="required"></textarea>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-
-                                <!-- button for sending -->
-                                <button type="submit" class="btn btn-success center-block">Отправить сообщение
-                                </button>
-
-                                <!-- indication sending -->
-                                <div class="clearfix"></div>
-                                <div class="progress" style="display:none; margin-top: 20px;">
-                                    <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-                                        aria-valuemax="100" style="width: 0">
-                                        <span class="sr-only">0%</span>
-                                    </div>
-                                </div>
-                                <div class="clearfix"></div>
-
-                            </form>
-
-                            <!-- message about sending -->
-                            <div class="alert alert-warning success-message hidden">
-                                Форма успешно отправлена. Нажмите на
-                                <a class="show-form" href="#">ссылку</a>, чтобы отправить ещё одно сообщение.
-                            </div>
-
-                        </div>
-                    </div>
+                <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3">
+                    <img src="./img/portfolio/fotogallery.jpg" class="portfolio__preview img-responsive" alt="preview">
+                    <a href="fotogallery/" target="_blank" class="btn btn-primary btn-lg">Демо</a>
                 </div>
+                <div class="col-sm-10 col-sm-offset-1">
+                    <h4 class="portfolio__title">Главная страница мебельной компании.</h4>
+                    <p>
+                        <br>Адаптивная верстка с использованием Bootstrap. Есть слайдер и "drop-down" меню для мобильных устройств.
+                    </p>
+
+                </div>
+                <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3">
+                    <img src="./img/portfolio/furnitureshop.jpg" class="portfolio__preview img-responsive" alt="preview">
+                    <a href="furnitureshop/index.html" target="_blank" class="btn btn-primary btn-lg">Демо</a>
+                </div>
+                <div class="col-sm-10 col-sm-offset-1">
+                    <h4 class="portfolio__title">Галерея игр.</h4>
+                    <p>
+                        Адаптивная вебстраница разработанная с использованием React и Bootstrap. Работает поиск игры по названию
+                        и есть возможность добавления своей игры.
+                    </p>
+                </div>
+                <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3">
+                    <img src="./img/portfolio/gamegallery.jpg" class="portfolio__preview img-responsive" alt="preview">
+                    <a href="gamegallery/index.html" target="_blank" class="btn btn-primary btn-lg">Демо</a>
+                </div>
+            </div>
+            <!-- row -->
         </div>
+        <!-- container -->
+    </section>
+
+    <!-- section contacts-->
+    <section class="contacts" id="contacts">
+        <h2 class="sectiontitle">Контакты</h2>
+        <hr class="underline">
+        <div class="col-xs-10 col-xs-offset-1">
+                    <h4 class="text-center">
+                        <pre>телефон: 8(983) 167-86-48</pre>
+                    </h4>
+                    <h4 class="text-center">
+                        <pre>e-mail:<span style="text-transform: lowercase;"> nikitin.pavel.nik@yandex.ru </span></pre>
+                    </h4>
+
+                </div>
+    </section>
+
+
+        <section class="row" id="contact">
+            <div class="col-xs-12">
+                <div class="col-lg-12 text-center">
+                    <h3>Отправить E-mail</h3>
+                    <hr class="star-primary">
+                </div>
+                <div class="panel panel-success">
+                    <div class="panel-body">
+
+                        <!-- feedback form -->
+                        <form id="feedbackForm" action="feedback/process/process.php" enctype="multipart/form-data" novalidate>
+                            <div class="row">
+                                <div class="col-sm-6 col-sm-offset-3">
+
+                                    <!-- user name -->
+                                    <div class="form-group has-feedback">
+                                        <label for="name" class="control-label">Имя</label>
+                                        <input id="name" type="text" name="name" class="form-control" value="" placeholder="Ваше имя" minlength="2" required="required">
+                                        <span class="glyphicon form-control-feedback"></span>
+                                    </div>
+
+                                </div>
+                                <div class="col-sm-6 col-sm-offset-3">
+
+                                    <!-- user Email -->
+                                    <div class="form-group has-feedback">
+                                        <label for="email" class="control-label">E-mail</label>
+                                        <input id="email" type="email" name="email" required="required" class="form-control" value="" placeholder="Ваш E-mail">
+                                        <span class="glyphicon form-control-feedback"></span>
+                                    </div>
+
+                                </div>
+                                <div class="col-sm-6 col-sm-offset-3">
+
+                                    <!-- user message -->
+                                    <div class="form-group has-feedback">
+                                        <label for="message" class="control-label">Сообщение</label>
+                                        <textarea id="message" name="message" class="form-control" rows="3" placeholder="Ваше сообщение" minlength="10" maxlength="500"
+                                            required="required"></textarea>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <!-- button for sending -->
+                            <button type="submit" class="btn btn-success center-block">Отправить сообщение
+                            </button>
+
+                            <!-- indication sending -->
+                            <div class="clearfix"></div>
+                            <div class="progress" style="display:none; margin-top: 20px;">
+                                <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                                    aria-valuemax="100" style="width: 0">
+                                    <span class="sr-only">0%</span>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+
+                        </form>
+
+                        <!-- message about sending -->
+                        <div class="alert alert-warning success-message hidden">
+                            Форма успешно отправлена. Нажмите на
+                            <a class="show-form" href="#">ссылку</a>, чтобы отправить ещё одно сообщение.
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </div>
     </div>
 
 
@@ -332,7 +337,7 @@
         <div class="footer-above">
             <div class="container">
                 <div class="row">
-                    
+
                     <div class="footer-col col-md-6">
                         <h4 class="foot">Социальные сети</h4>
                         <ul class="list-inline">
