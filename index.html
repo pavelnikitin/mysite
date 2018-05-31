@@ -51,14 +51,14 @@
 </head>
 
 <body id="page-top" class="index">
-    <section class="hero">
+    <section class="hero" id="hero">
         <div class="hero__overlay">
             <h1>HTML верстальщик,
                 <br> вебразработчик Никитин Павел
                 <br>(г. Красноярск).</h1>
         </div>
         <video loop muted autoplay poster="./img/Workaholic.jpg" class="hero__video">
-            <source src="./video/Workaholicconvert.mp4" type="video/mp4">
+            <source src="./video/Work.mp4" type="video/mp4">
             <source src="./video/Workaholic.webm" type="video/webm">
         </video>
         <!-- Navigation -->
@@ -70,7 +70,7 @@
                         <span class="sr-only">Toggle navigation</span>
                         <i class="fa fa-bars"></i>
                     </button>
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="#hero">
                         <img src="./img/logo2.png" alt="Site Logo">
                     </a>
                 </div>
@@ -78,9 +78,6 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="hidden">
-                            <a href="#"></a>
-                        </li>
                         <li class="page-scroll">
                             <a href="#portfolio">Портфолио</a>
                         </li>
@@ -88,7 +85,7 @@
                             <a href="#contacts">Контакты</a>
                         </li>
                         <li class="page-scroll">
-                            <a href="#contact">Отправить E-mail</a>
+                            <a href="#email">Отправить E-mail</a>
                         </li>
                     </ul>
                 </div>
@@ -206,8 +203,8 @@
                 <div class="col-sm-10 col-sm-offset-1">
                     <h4 class="portfolio__title">Фотогалерея.</h4>
                     <p>
-                        Адаптивная фотогалерея разработанная с использованием React и Bootstrap.
-                    Реализованы навигация по фотографиям, сортировка по категориям и "burger-menu".</p>
+                        Адаптивная фотогалерея разработанная с использованием React и Bootstrap. Реализованы навигация по фотографиям, сортировка
+                        по категориям и "burger-menu".</p>
 
                 </div>
                 <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3">
@@ -228,8 +225,8 @@
                 <div class="col-sm-10 col-sm-offset-1">
                     <h4 class="portfolio__title">Галерея игр.</h4>
                     <p>
-                        Адаптивная вебстраница разработанная с использованием React и Bootstrap. Работает поиск игры по названию
-                        и есть возможность добавления своей игры.
+                        Адаптивная вебстраница разработанная с использованием React и Bootstrap. Работает поиск игры по названию и есть возможность
+                        добавления своей игры.
                     </p>
                 </div>
                 <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3">
@@ -247,55 +244,56 @@
         <h2 class="sectiontitle">Контакты</h2>
         <hr class="underline">
         <div class="col-xs-10 col-xs-offset-1">
-                    <h4 class="text-center">
-                        <pre>телефон: 8(983) 167-86-48</pre>
-                    </h4>
-                    <h4 class="text-center">
-                        <pre>e-mail:<span style="text-transform: lowercase;"> nikitin.pavel.nik@yandex.ru </span></pre>
-                    </h4>
-
+            <p class="contacts__info text-center">
+                <i class="fa fa-phone"></i>&nbsp;&nbsp;8-983-167-86-48 </p>
+            <p class="contacts__info text-center">
+                <i class="fa fa-envelope"></i>&nbsp;&nbsp; nikitin.pavel.nik@yandex.ru </p>
+            <div class="google_map">
+                <div class="row">
+                    <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                        <div id="map"></div>
+                    </div>
                 </div>
+            </div>
+        </div>
     </section>
 
+    <!-- section sendmail-->
 
-        <section class="row" id="contact">
+    <section class="sendmail" id="email">
+        <h2 class="sectiontitle">Отправить E-mail</h2>
+        <hr class="underline">
+        <div class="row">
             <div class="col-xs-12">
-                <div class="col-lg-12 text-center">
-                    <h3>Отправить E-mail</h3>
-                    <hr class="star-primary">
-                </div>
                 <div class="panel panel-success">
                     <div class="panel-body">
 
                         <!-- feedback form -->
                         <form id="feedbackForm" action="feedback/process/process.php" enctype="multipart/form-data" novalidate>
                             <div class="row">
-                                <div class="col-sm-6 col-sm-offset-3">
+                                <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
 
                                     <!-- user name -->
                                     <div class="form-group has-feedback">
-                                        <label for="name" class="control-label">Имя</label>
                                         <input id="name" type="text" name="name" class="form-control" value="" placeholder="Ваше имя" minlength="2" required="required">
                                         <span class="glyphicon form-control-feedback"></span>
                                     </div>
 
                                 </div>
-                                <div class="col-sm-6 col-sm-offset-3">
+                                <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
 
                                     <!-- user Email -->
                                     <div class="form-group has-feedback">
-                                        <label for="email" class="control-label">E-mail</label>
                                         <input id="email" type="email" name="email" required="required" class="form-control" value="" placeholder="Ваш E-mail">
                                         <span class="glyphicon form-control-feedback"></span>
                                     </div>
 
                                 </div>
-                                <div class="col-sm-6 col-sm-offset-3">
+                                <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
 
                                     <!-- user message -->
                                     <div class="form-group has-feedback">
-                                        <label for="message" class="control-label">Сообщение</label>
-                                        <textarea id="message" name="message" class="form-control" rows="3" placeholder="Ваше сообщение" minlength="10" maxlength="500"
+                                        <textarea id="message" name="message" class="form-control" rows="4" placeholder="Ваше сообщение" minlength="10" maxlength="500"
                                             required="required"></textarea>
                                     </div>
 
@@ -304,7 +302,7 @@
 
 
                             <!-- button for sending -->
-                            <button type="submit" class="btn btn-success center-block">Отправить сообщение
+                            <button type="submit" class="btn btn-primary btn-lg center-block">Отправить
                             </button>
 
                             <!-- indication sending -->
@@ -328,77 +326,85 @@
                     </div>
                 </div>
             </div>
-    </div>
-    </div>
-
-
+        </div>
+    </section>
+   
     <!-- Footer -->
-    <footer class="row text-center">
-        <div class="footer-above">
+    <footer class="footer">
+        <div class="row text-center">
             <div class="container">
                 <div class="row">
-
-                    <div class="footer-col col-md-6">
-                        <h4 class="foot">Социальные сети</h4>
+                    <div class="col-md-6">
+                        <h4>Социальные сети</h4>
                         <ul class="list-inline">
                             <li>
-                                <a href="https://facebook.com/" class="btn-social btn-outline">
-                                    <span class="sr-only">Facebook</span>
+                                <a href="https://facebook.com/" target="_blank" class="bage social">
                                     <i class="fa fa-fw fa-facebook"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://twitter.com/" class="btn-social btn-outline">
-                                    <span class="sr-only">Twitter</span>
+                                <a href="https://twitter.com/" target="_blank" class="bage social">
                                     <i class="fa fa-fw fa-twitter"></i>
                                 </a>
                             </li>
                         </ul>
                     </div>
-                    <div class="footer-col col-md-6">
-                        <h4 class="foot">г. Красноярск,
+                    <div class="col-md-6">
+                        <h4>г. Красноярск,
                             <br>Красноярский Край
                         </h4>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="footer-below">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy;Nikitin Pavel
+                    <div class="col-xs-12">
+                        <p class="footer__copyright">Copyright &copy; Nikitin Pavel 2017 </p>
                     </div>
                 </div>
             </div>
-        </div>
     </footer>
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
+        <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+        <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+            <a class="btn btn-primary" href="#page-top">
+                <i class="fa fa-chevron-up"></i>
+            </a>
+        </div>
 
-    <!-- jQuery -->
+        <!-- jQuery -->
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script defer src="js/jquery.flexslider.js"></script>
-    <script src="feedback/vendors/jgrowl/jquery.jgrowl.min.js"></script>
-    <script src="js/jquery.mousewheel.js"></script>
-    <script src="feedback/js/main.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script defer src="js/jquery.flexslider.js"></script>
+        <script src="feedback/vendors/jgrowl/jquery.jgrowl.min.js"></script>
+        <script src="js/jquery.mousewheel.js"></script>
+        <script src="feedback/js/main.js"></script>
+        <script>
+            function initMap() {
+                var uluru = { lat: 56.03337490000001, lng: 92.88050309999994 };
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 16,
+                    center: uluru
+                });
+                var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                });
+            }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCe49OOGbyEYcub29-rI_FpR_UT8lRBNGE&callback=initMap">
+        </script>
 
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+        <!-- Plugin JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
 
-    <!-- Theme JavaScript -->
-    <script src="js/freelancer.min.js"></script>
-    </div>
+        <!-- Theme JavaScript -->
+        <script src="js/freelancer.min.js"></script>
+        </div>
 </body>
 
 </html>

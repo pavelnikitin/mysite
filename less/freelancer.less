@@ -125,11 +125,11 @@ hr.underline {
 
 
 /* navigation menu */
-.navbar-default {
-  border: none;
-  background-color: @theme-primary;
 
-  
+.navbar.navbar-default {
+  background-color: @theme-primary;
+  border: none;
+
   .navbar-nav > li > a {
     text-transform: uppercase;
 	font-size: 0.7rem;
@@ -254,9 +254,99 @@ hr.underline {
 /* section contacts */
 
 .contacts {
-  min-height: 400px;
-  background-color: @theme-darklight;
+  min-height: 620px;
+  background-color: @theme-light;
+  padding-top: 50px;
+  margin-bottom: 80px;
 }
+
+@media (max-width: 767px) {
+  .contacts {
+    padding-top: 0px;
+    margin-bottom: 20px;
+  }
+}
+
+p.contacts__info {
+  font-size: 1.4rem;
+}
+
+@media (max-width: 400px) {
+  p.contacts__info {
+    font-size: 1.1rem;
+  }
+}
+
+.fa.fa-phone,.fa.fa-envelope {
+  color: @theme-success;
+}
+
+/* google map */
+
+.google_map {
+  margin-top: 50px;
+
+  #map {
+    height: 350px;
+    background-color: gray;
+  }
+}
+
+/* sendmail section */
+
+.sendmail {
+  background-color: @theme-darklight;
+  min-height: 400px;
+  padding-bottom: 0px;
+}
+
+
+.panel.panel-success {
+  background-color: @theme-darklight;
+  border: none  ;
+  box-shadow: none;
+}
+
+/* footer */
+footer.footer {
+  min-height: 150px;
+  background-color: @theme-success;
+  color: @theme-light;
+}
+
+.bage.social {
+  background: @theme-light;
+  display: inline-block;
+  color: @theme-success;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  text-align: center;
+  line-height: 2.1rem;
+  padding-top: 0.2rem;
+  margin-right: 0px;
+  margin-left: 0.5625rem;
+  border: 2px solid @theme-success;
+
+  &:hover {
+    background-color: @theme-success;
+    color: @theme-light;
+    border: 2px solid @theme-light;
+  }
+}
+
+.footer h4 {
+  margin-top: 20px;
+}
+
+p.footer__copyright {
+  font-size: 0.9rem;
+  margin-top: 20px;
+}
+
+
+
 
 
 	
