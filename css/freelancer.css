@@ -112,7 +112,8 @@ hr.underline {
   color: #fff !important;
 }
 .navbar.navbar-default .navbar-nav > li > a:hover {
-  color: #c13c3d;
+  background-color: #fff;
+  color: #c13c3d !important;
 }
 .navbar.navbar-default .navbar-nav > .active > a {
   background-color: #fff;
@@ -131,6 +132,7 @@ hr.underline {
 }
 .navbar-toggle {
   padding: 3px 10px;
+  margin-right: 20px;
 }
 .navbar-default .navbar-toggle {
   color: #fff;
@@ -221,7 +223,7 @@ p.contacts__info {
 }
 @media (max-width: 500px) {
   p.contacts__info {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
 }
 .fa.fa-phone,
